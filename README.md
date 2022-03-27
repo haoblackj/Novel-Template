@@ -61,6 +61,10 @@
         - Dependency graph
         - Dependabot alerts
         - Dependabot security updates
+    - Pages (プレプリントとしての閲覧用ページ。必要な場合は設定してください。)
+        - Source
+            - Branch : gh-pages
+            - (root)
 
 
 
