@@ -1,0 +1,58 @@
+name: Milestone
+
+on:
+  create:
+  delete:
+  pull_request:
+    types: [ opened, edited ]
+    branches:
+      - milestone/**
+
+env:
+  GH_TOKEN: ${{ github.token }}
+  GH_REPO: ${{ github.repository }}
+
+jobs:
+  create-milestone:
+    if: github.event_name == 'create' && startsWith(github.event.ref, 'milestone/')
+    runs-on: ubuntu-20.04
+    timeout-minutes: 2
+    env:
+      BRANCH: ${{ github.event.ref }}
+
+    steps:
+      - name: Create a milestone
+        run: |
+          set -x
+          milestones=$(gh api -X GET /repos/${GITHUB_REPOSITORY}/milestones -f state=all)
+          if ! $(echo "${milestones}" | jq ". | any(.title == \"${BRANCH#milestone/}\")"); then
+            gh api -X POST repos/${GITHUB_REPOSITORY}/milestones -f title=${BRANCH#milestone/}
+          elif $(echo "${milestones}" | jq ". | any(.title == \"${BRANCH#milestone/}\" and .state == \"closed\")"); then
+            milestone_number=$(echo "${milestones}" | jq ". | map(select(.title == \"${BRANCH#milestone/}\")) | first | .number")
+            gh api -X PATCH repos/${GITHUB_REPOSITORY}/milestones/${milestone_number} -f state=open
+          fi
+
+  close-milestone:
+    if: github.event_name == 'delete' && startsWith(github.event.ref, 'milestone/')
+    runs-on: ubuntu-20.04
+    timeout-minutes: 2
+    env:
+      BRANCH: ${{ github.event.ref }}
+
+    steps:
+      - name: Close a milestone
+        run: |
+          set -x
+          milestone_number=$(gh api -X GET /repos/${GITHUB_REPOSITORY}/milestones --jq ". | map(select(.title == \"${BRANCH#milestone/}\")) | first | .number")
+          gh api -X PATCH repos/${GITHUB_REPOSITORY}/milestones/${milestone_number} -f state=closed
+
+  set-milestone:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-20.04
+    timeout-minutes: 2
+    env:
+      PR_NUMBER: ${{ github.event.number }}
+
+    steps:
+      - name: Set a milestone
+        run: gh pr edit ${PR_NUMBER} --milestone ${GITHUB_BASE_REF#milestone/}

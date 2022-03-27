@@ -1,0 +1,11 @@
+article.article p { margin: 10em 0px; line-height: 2em; }
+
+.body{ margin-right: 10%; margin-left: 10% }
+
+article.article em {
+
+  text-emphasis-style:dot filled;
+
+  -webkit-text-emphasis-style:dot filled;
+
+}

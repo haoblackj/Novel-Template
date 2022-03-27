@@ -1,0 +1,6 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Add new ToDo
+    about: made by config.yml
+    # edit {username} and {repo} for your environment
+    url: https://github.com/haoblackj/《Project Name》/issues/new?template=custom.md&projects=haoblackj%2F《Project Name》%2F1

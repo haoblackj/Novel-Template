@@ -1,0 +1,25 @@
+name: 'Automatically add issue to Kanban'
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+jobs:
+  automate-project-columns:
+    runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' }}
+    steps:
+    - name: GitHub Project Automation+
+      uses: alex-page/github-project-automation-plus@v0.8.1
+      with:
+      # The GH_TOKEN secret can be passed in using {{ secrets.GH_TOKEN }}
+        repo-token: ${{ secrets.GPA_PAT }}
+      # The name of the GitHub Project
+        project: Kanban
+      # The name of the column to move the issue or pull request to
+        column: ToDo
+      # Can be `update`, `delete` or `archive` or `add`. This determines the type of the action to be performed on the card
+
+        action: update # optional, default is update

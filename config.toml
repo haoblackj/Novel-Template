@@ -1,0 +1,34 @@
+baseURL = 'https://haoblackj.github.io/<PageName>/'
+UglyURLs = true
+languageCode = 'ja'
+defaultContentLanguage = "ja"
+title = 'PageTitle'
+hasCJKLanguage = true
+summaryLength = 140
+theme = 'whiteplain'
+contentDir = './episodes/'
+#contentDir = './dist/hameln/'
+publishDir = "docs"
+relativeURLS = true
+canonifyurls = true
+paginate = 5
+enableGitInfo = true
+
+[permalinks]
+    post = "/:year/:month/:slug"
+
+[params]
+  customCSS = ["/css/custom.css"]
+
+[params.author]
+  name = "haoblackj"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true
+      unsafe = true
+
+[frontmatter]
+  date = [":git"]
+  lastmod = [":git"]

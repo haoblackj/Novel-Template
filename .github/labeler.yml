@@ -1,0 +1,6 @@
+episodes:
+- episodes/*
+GitHubActions:
+- .github/*
+dictionaly:
+- dict/*

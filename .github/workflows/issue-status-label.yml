@@ -1,0 +1,65 @@
+name: Label issues
+on:
+  issues:
+    types:
+      - reopened
+      - opened
+      - closed
+      - assigned
+env:
+  PROJECT_NAME: Kanban
+jobs:
+  issue_labels:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add ToDo label
+        if: "github.event.action == 'opened'"
+        uses: andymckay/labeler@1.0.2
+        with:
+          add-labels: "ToDo"
+          remove-labels: "inprogress, close"
+          repo-token: ${{ secrets.Labeler_PAT }}
+      - name: Add inprogress label
+        if: "github.event.action == 'assigned' || github.event.action == 'reopened'"
+        uses: andymckay/labeler@1.0.2
+        with:
+          add-labels: "inprogress"
+          remove-labels: "ToDo, close"
+          repo-token: ${{ secrets.Labeler_PAT }}
+      - name: Add close label
+        if: "github.event.action == 'closed'"
+        uses: andymckay/labeler@1.0.2
+        with:
+          add-labels: "close"
+          remove-labels: "inprogress, ToDo"
+          repo-token: ${{ secrets.Labeler_PAT }}
+
+  assign_issue_to_project:
+    name: Assign issues to project
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign issues to project
+        uses: technote-space/create-project-card-action@v1
+        if: "github.event.action == 'opened'"
+        with:
+          PROJECT: ${{env.PROJECT_NAME}}
+          COLUMN: ToDo
+
+  move_assigned_card:
+    runs-on: ubuntu-latest
+    name: Move assigned card
+    steps:
+      - uses: alex-page/github-project-automation-plus@v0.3.0
+        if: "github.event.action == 'assigned'"
+        with:
+          project: ${{env.PROJECT_NAME}}
+          column: In Progress
+          repo-token: ${{ secrets.Labeler_PAT }}
+      - uses: alex-page/github-project-automation-plus@v0.3.0
+        if: "github.event.action == 'reopened'"
+        with:
+          project: ${{env.PROJECT_NAME}}
+          column: In Progress
+          repo-token: ${{ secrets.Labeler_PAT }}

@@ -1,0 +1,130 @@
+{
+  "filters": {
+  "allowlist": {
+    "allow": [
+        "鷹",
+        "脚",
+        "足",
+        "だし",
+        "出し",
+        "押しも押されも",
+        "クチ",
+        "がろう",
+        "カネ",
+        "だった",
+        "だろう",
+        "相まって",
+        "鑑み",
+        "云々",
+        "だ。",
+        "わかる",
+        "せない",
+        "共に",
+        "已む無し",
+        "所",
+        "未だ",
+        "縄張り",
+        "啓蒙",
+        "元も子も",
+        "身も蓋も",
+        "奴",
+        "やつ",
+        "いえ",
+        "家",
+        "人事",
+        "人事部",
+        "---",
+        "title",
+        "draft",
+        "date",
+        "weight",
+        "/<!--[\\s\\S]*?-->/m",
+        "/《[\\s\\S]*?》/m"
+    ]
+}
+},
+  "rules": {
+    "preset-ja-spacing": {
+      "ja-space-between-half-and-full-width": {
+        "space": "never"
+      },
+      "ja-no-space-between-full-width": true,
+      "ja-nakaguro-or-halfwidth-space-between-katakana": true,
+      "ja-no-space-around-parentheses": false,
+      "ja-space-after-exclamation": true,
+      "ja-space-after-question": true
+    },
+    "preset-ja-technical-writing": {
+      "no-exclamation-question-mark": {
+          "allowHalfWidthExclamation": true,
+          "allowFullWidthExclamation": true,
+          "allowHalfWidthQuestion"   : true,
+          "allowFullWidthQuestion"   : true
+        },
+          "ja-no-mixed-period": {
+          "periodMark": "。"
+      },
+        "max-kanji-continuous-len": false,
+        "ja-no-weak-phrase": false,
+        "arabic-kanji-numbers": false,
+        "no-mix-dearu-desumasu": false,
+        "max-ten": false,
+        "no-double-negative-ja": false,
+        "no-dropping-the-ra": false,
+        "no-doubled-joshi": false,
+        "ja-no-successive-word": false,
+        "sentence-length": false,
+        "ja-unnatural-alphabet": false
+      },
+    "spellcheck-tech-word": false,
+    "max-ten": {
+      "max" : 3
+    },
+    "general-novel-style-ja": {
+        "chars_leading_paragraph": "　「『【〈《（(“\"‘'［[〔｛{＜<",
+        "no_punctuation_at_closing_quote": true,
+        "space_after_marks": true,
+        "even_number_ellipsises": true,
+        "even_number_dashes": true,
+        "appropriate_use_of_punctuation": true,
+        "appropriate_use_of_interpunct": true,
+        "appropriate_use_of_choonpu": true,
+        "appropriate_use_of_minus_sign": true,
+        "max_arabic_numeral_digits": false
+    },
+    "preset-jtf-style": {
+      "1.1.1.本文": false,
+      "1.2.2.ピリオド(.)とカンマ(,)": false,
+      "2.1.8.算用数字": false,
+      "2.1.9.アルファベット": false,
+      "2.2.3.一部の助数詞の表記": false,
+      "3.3.かっこ類と隣接する文字の間のスペースの有無": false,
+      "4.1.1.句点(。)": false,
+      "4.2.1. 感嘆符(!)": false,
+      "4.2.2.疑問符(?)": false,
+      "4.3.1.丸かっこ（）": false,
+      "4.2.2.疑問符(？)":true
+    },
+    "ja-hiragana-hojodoushi": true,
+    "ja-no-redundant-expression": true,
+    "ja-no-abusage": true,
+    "no-double-negative-ja":true,
+    "no-dropping-the-ra": true,
+    "no-doubled-joshi": true,
+    "no-doubled-conjunctive-particle-ga": false,
+    "no-doubled-conjunction": true,
+    "no-zero-width-spaces": true,
+    "@textlint-ja/no-synonyms": true,
+    "@textlint-rule/no-invalid-control-character": true,
+    "@textlint-ja/textlint-rule-no-insert-dropping-sa": true,
+    "prh": {
+        "rulePaths" :[".\\prh.yml"]
+      }
+    },
+    "plugins":  {
+      "@textlint/markdown": false,
+      "@textlint/text": {
+        "extensions": [".md"]
+      }
+    }
+}

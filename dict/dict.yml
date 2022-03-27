@@ -1,0 +1,10 @@
+rules:
+  - expected: hogehoge
+    patterns:
+    - fugafuga
+    - piyopiyo
+    specs:
+    - from: fugafuga
+      to: hogehoge
+    - from: piyopiyo
+      to: hogehoge
