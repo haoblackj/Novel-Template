@@ -1,19 +1,19 @@
-<h1 align="center">Welcome to cavorite-is-forever 👋</h1>
+<h1 align="center">Welcome to Novel-Template 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/haoblackj/Cavorite-is-Forever#readme" target="_blank">
+  <a href="https://github.com/haoblackj/Novel-Template#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="https://github.com/haoblackj/Cavorite-is-Forever/graphs/commit-activity" target="_blank">
+  <a href="https://github.com/haoblackj/Novel-Template/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/haoblackj/Cavorite-is-Forever/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/haoblackj/cavorite-is-forever" />
+  <a href="https://github.com/haoblackj/Novel-Template/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/haoblackj/Novel-Template" />
   </a>
 </p>
 
 
-### 🏠 [Homepage](https://github.com/haoblackj/Cavorite-is-Forever#readme)
+### 🏠 [Homepage](https://github.com/haoblackj/Novel-Template#readme)
 
 ## Author
 
@@ -23,7 +23,7 @@
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/haoblackj/Cavorite-is-Forever/issues). You can also take a look at the [contributing guide](https://github.com/haoblackj/Cavorite-is-Forever/blob/master/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/haoblackj/Novel-Template/issues). You can also take a look at the [contributing guide](https://github.com/haoblackj/Novel-Template/blob/master/CONTRIBUTING.md).
 
 ## Show your support
 
@@ -96,7 +96,7 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2022 [haoblackj](https://github.com/haoblackj).<br />
-This project is [MIT](https://github.com/haoblackj/Cavorite-is-Forever/blob/master/LICENSE) licensed.
+This project is [MIT](https://github.com/haoblackj/Novel-Template/blob/master/LICENSE) licensed.
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
