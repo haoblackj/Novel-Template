@@ -118,7 +118,7 @@
     "@textlint-rule/no-invalid-control-character": true,
     "@textlint-ja/textlint-rule-no-insert-dropping-sa": true,
     "prh": {
-        "rulePaths" :[".\\prh.yml"]
+        "rulePaths" :["./prh.yml"]
       }
     },
     "plugins":  {

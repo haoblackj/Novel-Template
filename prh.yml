@@ -1,2 +1,2 @@
 imports:
-  - ../miroir/dict/dict.yml
+  - ./dict/dict.yml
