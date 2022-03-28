@@ -1,4 +1,34 @@
-# haoblackj's Novel-Template
+<h1 align="center">Welcome to cavorite-is-forever 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/haoblackj/Cavorite-is-Forever#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/haoblackj/Cavorite-is-Forever/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/haoblackj/Cavorite-is-Forever/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/haoblackj/cavorite-is-forever" />
+  </a>
+</p>
+
+
+### 🏠 [Homepage](https://github.com/haoblackj/Cavorite-is-Forever#readme)
+
+## Author
+
+👤 **haoblackj**
+
+* Github: [@haoblackj](https://github.com/haoblackj)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/haoblackj/Cavorite-is-Forever/issues). You can also take a look at the [contributing guide](https://github.com/haoblackj/Cavorite-is-Forever/blob/master/CONTRIBUTING.md).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
 ##  前提
 - 動作サポートは一切できません。思ったとおり動かない? 知ったこっちゃないです。ご自由に、ってやつっス
 -  説明に用いる環境は次のとおりです。
@@ -21,27 +51,14 @@
     npm init
     ~~~
     3.  質問に回答しながら、package.json を生成する。
-    4.  生成された package.json の scripts ブロックに、以下の記述を追記する。
-    ~~~npm:Append package.json > scripts
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "novel-build": "novel-build",
-    "novel-build-alphapolis": "novel-build-alphapolis",
-    "novel-build-hameln": "novel-build-hameln",
-    "novel-build-kakuyomu": "novel-build-kakuyomu",
-    "novel-build-narou": "novel-build-narou",
-    "novel-build-note": "novel-build-note",
-    "novel-build-novelabo": "novel-build-novelabo",
-    "novel-png": "novel-png",
-    "novel-png-square": "novel-png-square",
-    "novel-png-paperback": "novel-png-paperback",
-    "novel-png-note-header": "novel-png-note-header",
-    "novel-png-twitter-header": "novel-png-twitter-header",
-    "novel-proofread": "novel-proofread",
-    "novel-publish": "novel-publish",
-    "novel-publish-horizontal": "novel-publish-horizontal",
-    "novel-publish-vertical": "novel-publish-vertical",
-    "novel-report": "novel-report"
-    ~~~
+3.  個別ファイルを修正する。
+    - config.toml
+        - baseURL
+        - title
+    - dict/dict.yml
+        - それぞれの固有名詞あたりを書いたらいいんじゃないですかね。
+    - .github/ISSUE_TEMPLATE/config.yml
+        - 《Project Name》 をリポジトリ名に変更する。
 2.  GitHub Actions用の Secrets を追加する。
     1.  Account→Setting から Developer settings へ進み、Personal access tokens を開く。
     2.  以下の3つのトークンを生成する。
@@ -54,14 +71,6 @@
         - GitHub Project Automation+ : GPA_PAT
         - Labeler : LABELER_PAT
         - DEPENDABOT_AUTOMATION_TOKEN : DEPENDABOT_AUTOMATION_TOKEN
-3.  個別ファイルを修正する。
-    - config.toml
-        - baseURL
-        - title
-    - dict/dict.yml
-        - それぞれの固有名詞あたりを書いたらいいんじゃないですかね。
-    - .github/ISSUE_TEMPLATE/config.yml
-        - 《Project Name》 をリポジトリ名に変更する。
 4.  GitHubの各機能を有効化する。(特記なき場合は有効化する)
     - Projects
     - Discussions
@@ -80,7 +89,14 @@
             - Branch : gh-pages
             - (root)
 
+## ToDo
+- [ ] リポジトリに実装した機能に関する説明
+- [ ] 使用しているパッケージやhugoのテーマに関する記述
 
+## 📝 License
 
--  他、気づいたらアップデートします。
-    - 不備不足などありましたら、Issue・Pull Requestなどでご指摘ください。
+Copyright © 2022 [haoblackj](https://github.com/haoblackj).<br />
+This project is [MIT](https://github.com/haoblackj/Cavorite-is-Forever/blob/master/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
