@@ -51,6 +51,10 @@ Give a ⭐️ if this project helped you!
     npm init
     ~~~
     3.  質問に回答しながら、package.json を生成する。
+    4.  以下のコマンドを投入する。
+    ~~~cmd:generate package.json
+    npm install
+    ~~~
 3.  個別ファイルを修正する。
     - config.toml
         - baseURL
