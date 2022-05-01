@@ -1,11 +1,11 @@
-baseURL = 'https://haoblackj.github.io/<PageName>/'
+baseURL = 'https://<YourUserName>.github.io/<PageName>/'
 UglyURLs = true
 languageCode = 'ja'
 defaultContentLanguage = "ja"
-title = 'PageTitle'
+title = '<PageTitle>'
 hasCJKLanguage = true
 summaryLength = 140
-theme = 'whiteplain'
+theme = '<ThemeName>'
 contentDir = './episodes/'
 #contentDir = './dist/hameln/'
 publishDir = "docs"
@@ -21,7 +21,7 @@ enableGitInfo = true
   customCSS = ["/css/custom.css"]
 
 [params.author]
-  name = "haoblackj"
+  name = "<YourUserName>"
 
 [markup]
   [markup.goldmark]

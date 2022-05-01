@@ -36,7 +36,7 @@ Give a ⭐️ if this project helped you!
     - Google Chrome
 - MacやLinuxを使う方は適当に読み替えてください。
 - FirefoxやMicrosoft Edgeを使う方でも、以下の手順で特に問題ないかとは思います。検証はしてません。
-    - Internet ExplorerやSafariでは動作を確認していません。する気もありません。
+    - Internet Explorer(Microsoft EdgeのIEモードを含む)やSafariでは動作を確認していません。する気もありません。
 ##  テンプレートの使用方法
 1.  テンプレートリポジトリページ中段の「Use this template」を押下する。
 2.  作成したいリポジトリ名を入力する。
@@ -88,6 +88,7 @@ Give a ⭐️ if this project helped you!
         - Source
             - Branch : gh-pages
             - (root)
+5.  プレプリント機能を使用する場合、Hugoのテーマから適当なものを選び、設定する。
 
 ## ToDo
 - [ ] リポジトリに実装した機能に関する説明
