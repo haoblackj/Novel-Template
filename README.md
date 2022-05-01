@@ -32,7 +32,7 @@ Give a ⭐️ if this project helped you!
 ##  前提
 - 動作サポートは一切できません。思ったとおり動かない? 知ったこっちゃないです。ご自由に、ってやつっス
 -  説明に用いる環境は次のとおりです。
-    - Windows 10 November 2021 Update(バージョン 21H2) (x64)
+    - Windows 10 November 2021 Update(バージョン 21H2) (OS ビルド 19044.1645) (x64)
     - Google Chrome
 - MacやLinuxを使う方は適当に読み替えてください。
 - FirefoxやMicrosoft Edgeを使う方でも、以下の手順で特に問題ないかとは思います。検証はしてません。
@@ -64,7 +64,7 @@ Give a ⭐️ if this project helped you!
     2.  以下の3つのトークンを生成する。
         - GitHub Project Automation+ (repo)
         - Labeler (admin:public_key, notifications, repo, user, workflow, write:discussion, write:packages)
-        - DEPENDABOT_AUTOMATION_TOKEN (admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete:packages, gist, notifications, repo, user, workflow, write:discussion, write:packages)
+        - DEPENDABOT_AUTOMATION_TOKEN (repo)
     3.  各トークン発行後、トークンを控えておく。
     4.  リポジトリに戻り、Settings → Secrets → Actionsに進む。
     5.  それぞれのトークンを登録する。
@@ -84,7 +84,7 @@ Give a ⭐️ if this project helped you!
         - Dependency graph
         - Dependabot alerts
         - Dependabot security updates
-    - Pages (プレプリントとしての閲覧用ページ。必要な場合は設定してください。)
+    - Pages (プレプリントとしての閲覧用ページ。必要な場合は設定してください。プライベートリポジトリではGitHub Pro等の契約が必要です)
         - Source
             - Branch : gh-pages
             - (root)
