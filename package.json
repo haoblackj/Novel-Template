@@ -37,7 +37,7 @@
     "fastest-levenshtein": "^1.0.12",
     "renamer": "^4.0.0",
     "safe-rename-cli": "^0.2.11",
-    "sudachi-synonyms-dictionary": "^10.0.0",
+    "sudachi-synonyms-dictionary": "^11.0.0",
     "textlint": "^12.1.1",
     "textlint-filter-rule-allowlist": "^4.0.0",
     "textlint-rule-general-novel-style-ja": "^1.3.0",
