@@ -43,7 +43,7 @@
     "textlint-rule-general-novel-style-ja": "^1.3.0",
     "textlint-rule-ja-hiragana-hojodoushi": "^1.0.4",
     "textlint-rule-ja-no-abusage": "^3.0.0",
-    "textlint-rule-ja-no-mixed-period": "^2.1.1",
+    "textlint-rule-ja-no-mixed-period": "^3.0.1",
     "textlint-rule-ja-no-redundant-expression": "^4.0.1",
     "textlint-rule-ja-official-documents": "github:yabuuchi-hiroaki/textlint-rule-ja-official-documents",
     "textlint-rule-max-ten": "^4.0.3",
