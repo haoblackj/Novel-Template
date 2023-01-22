@@ -56,9 +56,6 @@ Give a ⭐️ if this project helped you!
     npm install
     ~~~
 3.  個別ファイルを修正する。
-    - config.toml
-        - baseURL
-        - title
     - dict/dict.yml
         - それぞれの固有名詞あたりを書いたらいいんじゃないですかね。
     - .github/ISSUE_TEMPLATE/config.yml
@@ -80,23 +77,15 @@ Give a ⭐️ if this project helped you!
     - Discussions
     - Pull Requests
         - Allow merge commits
-        - Allow squash commits
-        - Allow rebase commits
         - Allow auto-merge
         - Automatically delete head branches
     - Code security and analysis
         - Dependency graph
         - Dependabot alerts
         - Dependabot security updates
-    - Pages (プレプリントとしての閲覧用ページ。必要な場合は設定してください。プライベートリポジトリではGitHub Pro等の契約が必要です)
-        - Source
-            - Branch : gh-pages
-            - (root)
-5.  プレプリント機能を使用する場合、Hugoのテーマから適当なものを選び、設定する。
 
 ## ToDo
 - [ ] リポジトリに実装した機能に関する説明
-- [ ] 使用しているパッケージやhugoのテーマに関する記述
 
 ## 📝 License
 
