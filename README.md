@@ -34,6 +34,7 @@ Give a ⭐️ if this project helped you!
     -  機能追加などについては募集中です(諸般の事情によりお応えできない場合もあります)。
 -  説明に用いる環境は次のとおり。
     - Windows 10 November 2022 Update(バージョン 22H2) (OS ビルド 19045.2604) (x64)
+        - Microsoft Windows 10 Pro を使用しています。Home や Enterprise で前提条件を満たせるかは不明です。
     - Visual Studio Code
         -   前提となる拡張機能は次のとおり。
             ```
