@@ -32,7 +32,7 @@ Give a ⭐️ if this project helped you!
 ##  前提
 - 動作サポートは一切できません。思ったとおり動かない? 知ったこっちゃないです。ご自由に、ってやつっス
 -  説明に用いる環境は次のとおり。
-    - Windows 10 November 2021 Update(バージョン 21H2) (OS ビルド 19044.1645) (x64)
+    - Windows 10 November 2022 Update(バージョン 22H2) (OS ビルド 19045.2604) (x64)
     - Google Chrome
 - MacやLinuxを使う方は適当に読み替えてください。
 - FirefoxやMicrosoft Edgeを使う方でも、以下の手順で特に問題ないかとは思います。検証はしてません。
@@ -48,18 +48,16 @@ Give a ⭐️ if this project helped you!
     1.  クローンしたローカルディレクトリでcmdないしPowerShellを起動する。
     2.  以下のコマンドを投入する。
     ~~~cmd:generate package.json
-    npm init
+    yarn init
     ~~~
     3.  質問に回答しながら、package.json を生成する。
     4.  以下のコマンドを投入する。
     ~~~cmd:generate package.json
-    npm install
+    yarn install --frozen-lockfile
     ~~~
 3.  個別ファイルを修正する。
     - dict/dict.yml
         - それぞれの固有名詞あたりを書いたらいいんじゃないですかね。
-    - .github/ISSUE_TEMPLATE/config.yml
-        - 《Project Name》 をリポジトリ名に変更する。
 2.  GitHub Actions用の Secrets を追加する。
     1.  Account→Setting から Developer settings へ進み、Personal access tokens を開く。
     2.  以下の3つのトークンを生成する。
@@ -89,7 +87,7 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2022 [haoblackj](https://github.com/haoblackj).<br />
+Copyright © 2023 [haoblackj](https://github.com/haoblackj).<br />
 This project is [MIT](https://github.com/haoblackj/Novel-Template/blob/master/LICENSE) licensed.
 
 ***
