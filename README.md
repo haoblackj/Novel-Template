@@ -30,7 +30,8 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 Give a ⭐️ if this project helped you!
 
 ##  前提
-- 動作サポートは一切できません。機能追加などについては募集中です(諸般の事情によりお応えできない場合もあります)。
+- 動作サポートは一切できません。
+    -  機能追加などについては募集中です(諸般の事情によりお応えできない場合もあります)。
 -  説明に用いる環境は次のとおり。
     - Windows 10 November 2022 Update(バージョン 22H2) (OS ビルド 19045.2604) (x64)
     - Visual Studio Code
