@@ -23,3 +23,8 @@ gh repo edit --enable-rebase-merge=false
 # スカッシュマージ:無効
 gh repo edit --enable-squash-merge=false
 
+# プロジェクト:有効
+gh repo edit --enable-projects
+
+# discussion:有効
+gh repo edit --enable-discussions
