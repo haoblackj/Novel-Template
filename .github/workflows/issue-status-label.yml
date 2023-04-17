@@ -51,13 +51,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Move assigned card
     steps:
-      - uses: alex-page/github-project-automation-plus@v0.3.0
+      - uses: alex-page/github-project-automation-plus@v0.8.3
         if: "github.event.action == 'assigned'"
         with:
           project: ${{env.PROJECT_NAME}}
           column: In Progress
           repo-token: ${{ secrets.Labeler_PAT }}
-      - uses: alex-page/github-project-automation-plus@v0.3.0
+      - uses: alex-page/github-project-automation-plus@v0.8.3
         if: "github.event.action == 'reopened'"
         with:
           project: ${{env.PROJECT_NAME}}

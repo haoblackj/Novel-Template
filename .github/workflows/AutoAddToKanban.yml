@@ -12,7 +12,7 @@ jobs:
     if: ${{ github.actor != 'dependabot[bot]' }}
     steps:
     - name: GitHub Project Automation+
-      uses: alex-page/github-project-automation-plus@v0.8.1
+      uses: alex-page/github-project-automation-plus@v0.8.3
       with:
       # The GH_TOKEN secret can be passed in using {{ secrets.GH_TOKEN }}
         repo-token: ${{ secrets.GPA_PAT }}
