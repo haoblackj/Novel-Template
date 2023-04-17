@@ -23,6 +23,9 @@
     "novel-publish-vertical": "novel-publish-vertical",
     "novel-report": "novel-report"
   },
+  "config": {
+    "episodes_dir": "Draft"
+  },
   "author": "",
   "license": "MIT",
   "devDependencies": {
@@ -56,7 +59,7 @@
     "textlint-rule-spellcheck-tech-word": "^5.0.0"
   },
   "dependencies": {
-    "novel-builder": "git+https://github.com/haoblackj/novel-builder.git"
+    "novel-builder": "git+https://github.com/haoblackj/novel-builder.git#semver:^0.4.7"
   },
   "private": true
 }

@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.241.1/containers/javascript-node
 {
-  "name": "The_Meaning_of_Magic",
+  "name": "NovelWritingEnvironment",
   "build": {
     "dockerfile": "Dockerfile",
     // Update 'VARIANT' to pick a Node version: 18, 16, 14.
@@ -16,9 +16,9 @@
     // Configure properties specific to VS Code.
     "vscode": {
       "settings": {
-        // "dotfiles.repository": "https://github.com/(自分のGitHub ID)/dotfiles.git",
-        // "dotfiles.targetPath": "~/dotfiles",
-        // "dotfiles.installCommand": "~/dotfiles/install.sh",
+        "dotfiles.repository": "https://github.com/haoblackj/dotfiles.git",
+        "dotfiles.targetPath": "~/dotfiles",
+        "dotfiles.installCommand": "~/dotfiles/install.sh",
         "git.experimental.mergeEditor": true,
         "update.showReleaseNotes": false,
         "terminal.integrated.defaultProfile.linux": "zsh"
@@ -38,7 +38,8 @@
         "donjayamanne.githistory",
         "mhutchie.git-graph",
         "GitHub.github-vscode-theme",
-        "sdras.night-owl"
+        "sdras.night-owl",
+        "github.vscode-github-actions"
       ]
     }
   },

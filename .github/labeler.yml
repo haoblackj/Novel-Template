@@ -1,6 +1,10 @@
 episodes:
-- episodes/*
+  - Draft/*
+Project:
+  - Draft/*
 GitHubActions:
-- .github/*
+  - .github/*
 dictionaly:
-- dict/*
+  - dict/*
+LayOuts:
+  - layouts/*

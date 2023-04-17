@@ -6,7 +6,7 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 #RUN apt-get update -y && apt-get install fzf -y && apt install zsh -y
-RUN apt-get update -y
+RUN apt-get update -y && apt install zsh -y
 
 # [Optional] Uncomment if you want to install an additional version of node using nvm
 # ARG EXTRA_NODE_VERSION=10

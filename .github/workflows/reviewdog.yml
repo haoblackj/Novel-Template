@@ -1,11 +1,15 @@
 name: reviewdog
-on: [pull_request]
+on:
+  pull_request:
+    paths:
+      - "Draft/**"
 jobs:
   textlint:
     name: runner / textlint
     runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true
       - name: textlint-github-pr-review
@@ -14,4 +18,4 @@ jobs:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
           level: warning
-          textlint_flags: "episodes/**"
+          textlint_flags: "Draft/**"
