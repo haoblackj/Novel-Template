@@ -129,29 +129,10 @@ Give a ⭐️ if this project helped you!
     -   GitHubの認証情報を求めてきたら、都度サインインする。
     -   その他のエラーが出てきたら、都度ググる。
         -   初回構築の際によく生じるエラーについては、そのうち追記します。
-2.  GitHub Actions用の Secrets を追加する。
-    1.  Account→Setting から Developer settings へ進み、Personal access tokens を開く。
-    2.  以下の2つのトークンを生成する。
-        - GitHub Project Automation+ (repo)
-        - Labeler (admin:public_key, notifications, repo, user, workflow, write:discussion, write:packages)
-    3.  各トークン発行後、トークンを控えておく。
-    4.  リポジトリに戻り、Settings → Secrets → Actionsに進む。
-    5.  それぞれのトークンを登録する。
-        - GitHub Project Automation+ : GPA_PAT
-        - Labeler : LABELER_PAT
-3.  下記ページを参考に、GitHub Appを作成し、下記のとおりに情報を登録する。
-    [GitHub Appsトークン解体新書：GitHub ActionsからPATを駆逐する技術](https://zenn.dev/tmknom/articles/github-apps-token)
-    - AUTO_MERGE_BOT_APP_ID
-    - AUTO_MERGE_BOT_PRIVATE_KEY
 4.  ターミナルに以下のコマンドを投入して、リポジトリの設定を実行する。
     ```bash:Configure Repository Setting
     ./configure_repository.sh
     ```
-5.  GitHubの各機能を有効化する。(特記なき場合は有効化する)
-    - Code security and analysis
-        - Dependency graph
-        - Dependabot alerts
-        - Dependabot security updates
 
 ## ToDo
 - [ ] リポジトリに実装した機能に関する説明
