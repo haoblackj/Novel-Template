@@ -33,18 +33,26 @@ Give a ⭐️ if this project helped you!
 - 動作サポートは一切できません。
     -  機能追加などについては募集中です(諸般の事情によりお応えできない場合もあります)。
 -  説明に用いる環境は次のとおり。
-    - Windows 10 November 2022 Update(バージョン 22H2) (OS ビルド 19045.2604) (x64)
-        - Microsoft Windows 10 Pro を使用しています。Home や Enterprise で前提条件を満たせるかは不明です。
+    - Microsoft Windows [Version 10.0.22621.2283]
+        - Microsoft Windows 11 Pro を使用しています。Home や Enterprise で前提条件を満たせるかは不明です。
     - Visual Studio Code
         -   前提となる拡張機能は次のとおり。
             ```
-            GitHub.codespaces
+            EditorConfig.EditorConfig
+            haoblackj.convertwidth4novelwriter
+            TaiyoFujii.novel-writer
+            taichi.vscode-textlint
+            me-dutour-mathieu.vscode-github-actions
             GitHub.vscode-pull-request-github
-            MS-CEINTL.vscode-language-pack-ja
-            ms-vscode-remote.remote-containers
-            ms-vscode-remote.remote-ssh
-            ms-vscode-remote.remote-ssh-edit
-            ms-vscode-remote.remote-wsl
+            KnisterPeter.vscode-commitizen
+            redhat.vscode-yaml
+            eamodio.gitlens
+            donjayamanne.githistory
+            mhutchie.git-graph
+            GitHub.github-vscode-theme
+            sdras.night-owl
+            github.vscode-github-actions
+            TaiyoFujii.japanese-morpheme-handler
             ```
         -   上に示した拡張機能のリストをテキストファイルに保存して、下記のPowerShellを実行すると一括でインストールできる。
             ```PowerShell
@@ -54,13 +62,13 @@ Give a ⭐️ if this project helped you!
     - Windows Subsystem for Linux(以下 WSL)
         - WSLのバージョン等は次のとおり。
           ```
-          WSL バージョン: 1.2.0.0
+          WSL バージョン: 1.2.5.0
           カーネル バージョン: 5.15.90.1
           WSLg バージョン: 1.0.51
           MSRDC バージョン: 1.2.3770
           Direct3D バージョン: 1.608.2-61064218
           DXCore バージョン: 10.0.25131.1002-220531-1700.rs-onecore-base2-hyp
-          Windows バージョン: 10.0.19045.2846
+          Windows バージョン: 10.0.22621.2428
           ```
         - WSLで使用するディストリビューションは次のとおり。
           ```
