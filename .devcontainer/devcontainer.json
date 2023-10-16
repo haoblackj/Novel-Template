@@ -26,7 +26,6 @@
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
         "EditorConfig.EditorConfig",
-        "bungcip.better-toml",
         "haoblackj.convertwidth4novelwriter",
         "TaiyoFujii.novel-writer",
         "taichi.vscode-textlint",
@@ -39,7 +38,8 @@
         "mhutchie.git-graph",
         "GitHub.github-vscode-theme",
         "sdras.night-owl",
-        "github.vscode-github-actions"
+        "github.vscode-github-actions",
+        "TaiyoFujii.japanese-morpheme-handler"
       ]
     }
   },
