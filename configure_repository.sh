@@ -11,9 +11,6 @@ gh repo edit --delete-branch-on-merge
 # 自動マージ機能:有効
 gh repo edit --enable-auto-merge
 
-# Issue機能:有効
-gh repo edit --enable-issues
-
 #マージコミット:有効
 gh repo edit --enable-merge-commit
 
@@ -23,8 +20,10 @@ gh repo edit --enable-rebase-merge=false
 # スカッシュマージ:無効
 gh repo edit --enable-squash-merge=false
 
-# プロジェクト:有効
-gh repo edit --enable-projects
-
-# discussion:有効
-gh repo edit --enable-discussions
+# novel-writer向けのVivliostyleインストール
+# まずはnpmがインストールされているか確認、なければインストールを求めて処理終了
+if ! type "npm" > /dev/null 2>&1; then
+  echo "npmがインストールされていません。npmをインストールしてください。"
+  exit 1
+fi
+npm install -g @vivliostyle/cli
