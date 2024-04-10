@@ -78,11 +78,6 @@ Give a ⭐️ if this project helped you!
           Release:        22.04
           Codename:       jammy
           ```
-
-    - Docker
-        - WSL内からDockerが使えれば、たいてい大丈夫だと思います。
-        - 私はUbuntuに直接Dockerをインストールしていますが、CLI操作に不慣れな人は、WindowsにDocker Desktopをインストールしてもいいかと思います。
-        - 詳しい設定方法は自分で調べてください。
     - Windows Terminal
 - WSL環境は下の設定にあわせることをおすすめします。
     ```PowerShell
